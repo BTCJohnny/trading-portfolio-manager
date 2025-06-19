@@ -1,0 +1,17 @@
+2025-06-19 08:05:10,749 - test_logger - DEBUG - Debug message test
+2025-06-19 08:05:10,749 - test_logger - INFO - Info message test
+2025-06-19 08:05:10,749 - test_logger - WARNING - Warning message test
+2025-06-19 08:16:32,586 - test_logger - DEBUG - Debug message test
+2025-06-19 08:16:32,587 - test_logger - INFO - Info message test
+2025-06-19 08:16:32,587 - test_logger - WARNING - Warning message test
+2025-06-19 08:16:32,587 - portfolio_manager.utils.helpers - INFO - Configuration validation passed
+2025-06-19 08:16:32,587 - portfolio_manager.utils.helpers - ERROR - Credentials file not found: /fake/nonexistent/path
+2025-06-19 08:16:33,613 - portfolio_manager.connectors.bot_connector - INFO - Bot connector initialized
+2025-06-19 08:16:33,613 - portfolio_manager.connectors.bot_connector - INFO - Registered bot 'test_bot' with wallet 'test_wallet'
+2025-06-19 08:26:19,052 - test_logger - DEBUG - Debug message test
+2025-06-19 08:26:19,053 - test_logger - INFO - Info message test
+2025-06-19 08:26:19,053 - test_logger - WARNING - Warning message test
+2025-06-19 08:26:19,053 - portfolio_manager.utils.helpers - INFO - Configuration validation passed
+2025-06-19 08:26:19,053 - portfolio_manager.utils.helpers - ERROR - Credentials file not found: /fake/nonexistent/path
+2025-06-19 08:26:19,053 - portfolio_manager.connectors.bot_connector - INFO - Bot connector initialized
+2025-06-19 08:26:19,058 - portfolio_manager.connectors.bot_connector - INFO - Registered bot 'test_bot' with wallet 'test_wallet'
