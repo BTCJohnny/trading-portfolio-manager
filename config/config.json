@@ -1,40 +1,9 @@
 {
-    "spreadsheet_url": "https://docs.google.com/spreadsheets/d/YOUR_SPREADSHEET_ID_HERE/edit",
-    "credentials_path": "path/to/your/service_account_credentials.json",
+    "spreadsheet_url": "https://docs.google.com/spreadsheets/d/1BLups0XxTIOyq9e1iFowgzZWr1KYoMTzaUv4TIN74P4/edit",
+    "credentials_path": "credentials/river-dynamo-445508-m1-ac85f6c3600a.json",
     "wallets": {
-        "Wallet_Arbitrage": {
-            "bot_name": "Arbitrage_Bot_1",
-            "initial_balance": 50000,
-            "target_allocation": 0.25,
-            "description": "Arbitrage trading strategy"
-        },
-        "Wallet_DCA": {
-            "bot_name": "DCA_Bot_1",
-            "initial_balance": 30000,
-            "target_allocation": 0.20,
-            "description": "Dollar Cost Averaging strategy"
-        },
-        "Wallet_Grid": {
-            "bot_name": "Grid_Trading_Bot",
-            "initial_balance": 40000,
-            "target_allocation": 0.30,
-            "description": "Grid trading strategy"
-        },
-        "Wallet_Momentum": {
-            "bot_name": "Momentum_Bot",
-            "initial_balance": 25000,
-            "target_allocation": 0.25,
-            "description": "Momentum trading strategy"
-        }
-    },
-    "update_settings": {
-        "frequency_minutes": 5,
-        "dashboard_refresh_minutes": 1,
-        "retry_attempts": 3,
-        "timeout_seconds": 30
-    },
-    "logging": {
-        "level": "INFO",
-        "max_log_files": 30
+      "trading_bot_1": {},
+      "trading_bot_2": {},
+      "manual_trades": {}
     }
-}
+  }

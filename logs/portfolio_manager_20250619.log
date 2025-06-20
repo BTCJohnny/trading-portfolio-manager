@@ -15,3 +15,57 @@
 2025-06-19 08:26:19,053 - portfolio_manager.utils.helpers - ERROR - Credentials file not found: /fake/nonexistent/path
 2025-06-19 08:26:19,053 - portfolio_manager.connectors.bot_connector - INFO - Bot connector initialized
 2025-06-19 08:26:19,058 - portfolio_manager.connectors.bot_connector - INFO - Registered bot 'test_bot' with wallet 'test_wallet'
+2025-06-19 08:42:48,692 - portfolio_manager.utils.helpers - INFO - Configuration loaded from /Users/johnnyt/Library/CloudStorage/OneDrive-Personal/Python/Githubs/trading-portfolio-manager/config/config.json
+2025-06-19 08:42:48,693 - portfolio_manager.utils.helpers - INFO - Configuration validation passed
+2025-06-19 08:42:48,693 - portfolio_manager.utils.helpers - ERROR - Credentials file not found: path/to/your/service_account_credentials.json
+2025-06-19 08:42:48,693 - __main__ - ERROR - Setup failed: Credentials file not found: path/to/your/service_account_credentials.json
+2025-06-19 08:43:18,295 - portfolio_manager.utils.helpers - INFO - Configuration loaded from /Users/johnnyt/Library/CloudStorage/OneDrive-Personal/Python/Githubs/trading-portfolio-manager/config/config.json
+2025-06-19 08:43:18,295 - portfolio_manager.utils.helpers - INFO - Configuration validation passed
+2025-06-19 08:43:18,295 - portfolio_manager.utils.helpers - INFO - Credentials file found: credentials/river-dynamo-445508-m1-ac85f6c3600a.json
+2025-06-19 08:43:19,534 - portfolio_manager.connectors.sheets_connector - INFO - Connected to Google Sheets: Trading Portfolio Dashboard
+2025-06-19 08:43:19,535 - portfolio_manager.core.dashboard - INFO - Portfolio dashboard manager initialized
+2025-06-19 08:43:19,535 - portfolio_manager.core.portfolio_manager - INFO - Portfolio manager initialized successfully
+2025-06-19 08:43:19,535 - portfolio_manager.core.portfolio_manager - INFO - Setting up portfolio structure...
+2025-06-19 08:43:19,535 - portfolio_manager.core.dashboard - INFO - Creating/updating portfolio dashboard sheet
+2025-06-19 08:43:19,730 - portfolio_manager.connectors.sheets_connector - INFO - Creating new worksheet: Portfolio Dashboard
+2025-06-19 08:43:28,988 - portfolio_manager.core.dashboard - INFO - Dashboard sheet created successfully
+2025-06-19 08:43:29,222 - portfolio_manager.connectors.sheets_connector - INFO - Creating new worksheet: trading_bot_1
+2025-06-19 08:43:30,854 - portfolio_manager.core.wallet_manager - INFO - Setting up new structure for wallet: trading_bot_1
+2025-06-19 08:43:35,061 - portfolio_manager.core.wallet_manager - INFO - Wallet manager initialized for: trading_bot_1
+2025-06-19 08:43:35,062 - portfolio_manager.core.portfolio_manager - INFO - Added wallet: trading_bot_1
+2025-06-19 08:43:35,343 - portfolio_manager.connectors.sheets_connector - INFO - Creating new worksheet: trading_bot_2
+2025-06-19 08:43:35,923 - portfolio_manager.core.wallet_manager - INFO - Setting up new structure for wallet: trading_bot_2
+2025-06-19 08:43:38,321 - portfolio_manager.core.wallet_manager - INFO - Wallet manager initialized for: trading_bot_2
+2025-06-19 08:43:38,322 - portfolio_manager.core.portfolio_manager - INFO - Added wallet: trading_bot_2
+2025-06-19 08:43:38,579 - portfolio_manager.connectors.sheets_connector - INFO - Creating new worksheet: manual_trades
+2025-06-19 08:43:39,173 - portfolio_manager.core.wallet_manager - INFO - Setting up new structure for wallet: manual_trades
+2025-06-19 08:43:43,082 - portfolio_manager.core.wallet_manager - INFO - Wallet manager initialized for: manual_trades
+2025-06-19 08:43:43,083 - portfolio_manager.core.portfolio_manager - INFO - Added wallet: manual_trades
+2025-06-19 08:43:43,083 - portfolio_manager.core.portfolio_manager - INFO - Updating portfolio dashboard...
+2025-06-19 08:43:43,312 - portfolio_manager.core.wallet_manager - WARNING - Could not get value from B2 in trading_bot_1: could not convert string to float: '=SUMPRODUCT((B6:B1000="BUY")*(F6:F1000))'
+2025-06-19 08:43:43,535 - portfolio_manager.core.wallet_manager - WARNING - Could not get value from D2 in trading_bot_1: could not convert string to float: '=IF(ROW(G1000:G6)>0INDEX(G6:G1000COUNTA(G6:G1000))0)'
+2025-06-19 08:43:43,774 - portfolio_manager.core.wallet_manager - WARNING - Could not get value from F2 in trading_bot_1: could not convert string to float: '=D2-B2'
+2025-06-19 08:43:44,282 - portfolio_manager.core.wallet_manager - WARNING - Could not get value from H2 in trading_bot_1: could not convert string to float: '=IF(AND(B2>0D2>0COUNTA(A6:A1000)>0)POWER((D2/B2)(365/MAX(1DAYS(TODAY()MIN(A6:A1000)))))-10)*100'
+2025-06-19 08:43:44,524 - portfolio_manager.core.wallet_manager - WARNING - Could not get value from B2 in trading_bot_2: could not convert string to float: '=SUMPRODUCT((B6:B1000="BUY")*(F6:F1000))'
+2025-06-19 08:43:44,791 - portfolio_manager.core.wallet_manager - WARNING - Could not get value from D2 in trading_bot_2: could not convert string to float: '=IF(ROW(G1000:G6)>0INDEX(G6:G1000COUNTA(G6:G1000))0)'
+2025-06-19 08:43:45,024 - portfolio_manager.core.wallet_manager - WARNING - Could not get value from F2 in trading_bot_2: could not convert string to float: '=D2-B2'
+2025-06-19 08:43:45,257 - portfolio_manager.core.wallet_manager - WARNING - Could not get value from H2 in trading_bot_2: could not convert string to float: '=IF(AND(B2>0D2>0COUNTA(A6:A1000)>0)POWER((D2/B2)(365/MAX(1DAYS(TODAY()MIN(A6:A1000)))))-10)*100'
+2025-06-19 08:43:45,491 - portfolio_manager.core.wallet_manager - WARNING - Could not get value from B2 in manual_trades: could not convert string to float: '=SUMPRODUCT((B6:B1000="BUY")*(F6:F1000))'
+2025-06-19 08:43:45,723 - portfolio_manager.core.wallet_manager - WARNING - Could not get value from D2 in manual_trades: could not convert string to float: '=IF(ROW(G1000:G6)>0INDEX(G6:G1000COUNTA(G6:G1000))0)'
+2025-06-19 08:43:45,976 - portfolio_manager.core.wallet_manager - WARNING - Could not get value from F2 in manual_trades: could not convert string to float: '=D2-B2'
+2025-06-19 08:43:46,204 - portfolio_manager.core.wallet_manager - WARNING - Could not get value from H2 in manual_trades: could not convert string to float: '=IF(AND(B2>0D2>0COUNTA(A6:A1000)>0)POWER((D2/B2)(365/MAX(1DAYS(TODAY()MIN(A6:A1000)))))-10)*100'
+2025-06-19 08:43:47,301 - portfolio_manager.core.dashboard - INFO - Updated wallet summary with 3 wallets
+2025-06-19 08:43:47,301 - portfolio_manager.core.portfolio_manager - INFO - Portfolio dashboard updated successfully
+2025-06-19 08:43:47,301 - portfolio_manager.core.portfolio_manager - INFO - Portfolio setup completed
+2025-06-19 08:43:47,540 - portfolio_manager.core.wallet_manager - WARNING - Could not get value from B2 in trading_bot_1: could not convert string to float: '=SUMPRODUCT((B6:B1000="BUY")*(F6:F1000))'
+2025-06-19 08:43:47,773 - portfolio_manager.core.wallet_manager - WARNING - Could not get value from D2 in trading_bot_1: could not convert string to float: '=IF(ROW(G1000:G6)>0INDEX(G6:G1000COUNTA(G6:G1000))0)'
+2025-06-19 08:43:48,000 - portfolio_manager.core.wallet_manager - WARNING - Could not get value from F2 in trading_bot_1: could not convert string to float: '=D2-B2'
+2025-06-19 08:43:48,249 - portfolio_manager.core.wallet_manager - WARNING - Could not get value from H2 in trading_bot_1: could not convert string to float: '=IF(AND(B2>0D2>0COUNTA(A6:A1000)>0)POWER((D2/B2)(365/MAX(1DAYS(TODAY()MIN(A6:A1000)))))-10)*100'
+2025-06-19 08:43:48,488 - portfolio_manager.core.wallet_manager - WARNING - Could not get value from B2 in trading_bot_2: could not convert string to float: '=SUMPRODUCT((B6:B1000="BUY")*(F6:F1000))'
+2025-06-19 08:43:48,741 - portfolio_manager.core.wallet_manager - WARNING - Could not get value from D2 in trading_bot_2: could not convert string to float: '=IF(ROW(G1000:G6)>0INDEX(G6:G1000COUNTA(G6:G1000))0)'
+2025-06-19 08:43:48,984 - portfolio_manager.core.wallet_manager - WARNING - Could not get value from F2 in trading_bot_2: could not convert string to float: '=D2-B2'
+2025-06-19 08:43:49,238 - portfolio_manager.core.wallet_manager - WARNING - Could not get value from H2 in trading_bot_2: could not convert string to float: '=IF(AND(B2>0D2>0COUNTA(A6:A1000)>0)POWER((D2/B2)(365/MAX(1DAYS(TODAY()MIN(A6:A1000)))))-10)*100'
+2025-06-19 08:43:49,476 - portfolio_manager.core.wallet_manager - WARNING - Could not get value from B2 in manual_trades: could not convert string to float: '=SUMPRODUCT((B6:B1000="BUY")*(F6:F1000))'
+2025-06-19 08:43:49,732 - portfolio_manager.core.wallet_manager - WARNING - Could not get value from D2 in manual_trades: could not convert string to float: '=IF(ROW(G1000:G6)>0INDEX(G6:G1000COUNTA(G6:G1000))0)'
+2025-06-19 08:43:49,960 - portfolio_manager.core.wallet_manager - WARNING - Could not get value from F2 in manual_trades: could not convert string to float: '=D2-B2'
+2025-06-19 08:43:50,198 - portfolio_manager.core.wallet_manager - WARNING - Could not get value from H2 in manual_trades: could not convert string to float: '=IF(AND(B2>0D2>0COUNTA(A6:A1000)>0)POWER((D2/B2)(365/MAX(1DAYS(TODAY()MIN(A6:A1000)))))-10)*100'
